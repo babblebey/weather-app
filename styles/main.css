@@ -13,13 +13,12 @@ body {
 /* Hero */
 .hero {
     background: green;
-    /* height: 100vh; */
     height: 40vh;    
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     padding: 0 20px 20px 20px;
 }
+
 .hero > * {
     flex-basis: 100%;
 }
@@ -27,11 +26,23 @@ body {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
     align-self: flex-start;
     color: #fff;
 }
+.hero .title a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.hero .title a img {
+    width: 30px;
+    margin: auto;
+}
+.hero .title a span {
+    margin-left: 5px;
+}
 .hero .search-wrapper {
-    /* display: flex; */
     align-self: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -168,4 +179,119 @@ footer {
     text-align: center;
     padding: 20px;
     margin-bottom: 2em;
+}
+
+/* Small Sized Laptop */
+@media (max-width: 884px) {
+    ._big.card .icon {
+        flex-basis: 50%;
+        text-align: right;
+    }
+    ._big.card .icon img {
+        width: 80%;
+    }
+    ._big.card .temperature {
+        flex-basis: 50%;
+    }
+    ._big.card .temperature h2 {
+        font-size: 4.5em;
+    }
+    ._big.card .details {
+        flex-basis: 100%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+    ._big.card .icon img {
+        width: 90%;
+    }
+    ._small.card {
+        flex-basis: 48%;
+    }
+}
+
+/* Large Sized Mobile */ 
+@media (max-width: 610px) {
+    ._big.card .temperature h2 {
+        font-size: 3em;
+    }
+}
+
+/* Medium Sized Mobile */
+@media (max-width: 520px) {
+    ._big.card .details > * {
+        flex-basis: 100%;
+    }
+    ._big.card .details > *:nth-child(5) {
+        border-bottom: 1px solid rgba(209, 209, 209, 0.204);
+    }
+    ._small.card .temperature h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Small Sized Mobile */
+@media (max-width: 427px) {
+    .hero .title h1 {
+        font-size: 1.5em;
+    }
+    .hero .title a span {
+        display: none;
+    }
+    .hero .location {
+        font-size: 2em;
+    }
+    .hero .location .flag img {
+        width: 20px;
+        border-radius: 2px;
+    }
+    ._big.card {
+        margin-bottom: -20px;
+        padding: .5em;
+    }
+    ._big.card .icon {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    ._big.card .icon img {
+        width: 70%;
+    }
+    ._big.card .temperature {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 1.2em;
+    }
+    ._big.card .temperature h2 {
+        font-size: 3.5em;
+    }
+    ._big.card .details .label {
+        font-size: .75em;
+    }
+    ._big.card .details .value {
+        font-size: 1.1em;
+    }
+    ._small.card {
+        flex-basis: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+    ._small.card > * {
+        flex-basis: initial;
+        display: flex;
+    }
+    ._small.card h5 {
+        font-size: 1em;
+    }
+    ._small.card .icon img {
+        width: 90%;
+    }
+    ._small.card .temperature {
+        text-align: left;
+    }
+    ._small.card .temperature h2 {
+        font-size: 1em;
+        margin: 5px 0;
+    }
 }
