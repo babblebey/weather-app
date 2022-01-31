@@ -254,6 +254,13 @@ footer a {
     color: crimson;
 }
 
+/* Medium Sized Laptop */
+@media (max-width: 1060px) {
+    ._big.card .temperature h2 {
+        font-size: 4em;
+    }
+} 
+
 /* Small Sized Laptop */
 @media (max-width: 884px) {
     ._big.card .icon {
