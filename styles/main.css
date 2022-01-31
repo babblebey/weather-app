@@ -11,12 +11,11 @@ body {
     padding: 20px;
 }
 .hide {
-    /* display: none; */
+    display: none;
 }
 /* Hero */
 .hero {
-    background-image: url(../img/3.jpg);
-    height: 50vh;    
+    height: 50vh;
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px 20px 20px;
