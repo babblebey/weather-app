@@ -11,4 +11,7 @@ This project was built in Plain HTML CSS Flexbox, JavaScript (momentJs library).
 - Weather API -  Accuweather API
 - JavaScript Date Library - MomentJS
 
+# See Live Preview
+- https://weather-app-babblebey.netlify.app/
+
 You can follow me on my journey at https://instagram.com/babblebey
