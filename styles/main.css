@@ -88,19 +88,22 @@ body {
     width: 100%;
     text-align: center;
 }
-.hero .search-wrapper form input {
+.hero .search-wrapper form input, input:focus-visible {
     width: 80%;
     padding: 15px;
     border: none;
+    outline: none;
     border-radius: 5px;
     font-size: 1.1em;
+    line-height: 1.2;
     font-family: 'Overpass', sans-serif;
     box-shadow: 0 1em 1em rgba(0,0,0,.1);
     position: relative;
+    box-sizing: border-box;
 }
 .hero .current-search {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 0.5em auto;
     align-self: center;
     color: #fff;
     position: relative;
@@ -286,12 +289,18 @@ footer a {
     .hero .title a span {
         display: none;
     }
+    .hero .search-wrapper form input {
+        width: 100%;
+    }
     .hero .current-search .location {
         font-size: 2em;
     }
     .hero .current-search .location .flag img {
         width: 20px;
         border-radius: 2px;
+    }
+    .hero .current-search .time {
+        font-size: 1em;
     }
     ._big.card {
         margin-bottom: -20px;
