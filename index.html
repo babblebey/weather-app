@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="fullwidth hero">
+        
+        <div class="title">
+            <h1>Weather App</h1>
+        </div>
+        
+        <div class="search-wrapper">
+            <form class="search my-4 text-center">
+                <input type="text" name="city" placeholder="Search Location">
+            </form>
+        </div>
+        
+        <div class="location">
+            <span class="city">Lagos</span>, <span class="country">Nigeria</span>
+            <span class="flag"><img src="https://flagpedia.net/data/flags/h80/ng.png"></span>
+        </div>
+    </div>
+
+    <main class="container result-section">
+
+        <div class="current-weather">
+            <div class="_big card">
+                <div class="icon">
+                    <img src="img/icons/1.svg">
+                </div>
+                <div class="temperature">
+                    <h2>40<span>&deg;C</span></h2>
+                    <span>Hazy Cloud</span>
+                </div>
+                <div class="details">
+                    <div><span class="label">Wind</span><span class="value">0 km/h</span></div>
+                    <div><span class="label">Pressure</span><span class="value">↑ ↔ ↓ 57%</span></div>
+                    <div><span class="label">Humidity</span><span class="value">57%</span></div>
+                    <div><span class="label">Wind</span><span class="value">0 km/h</span></div>
+                    <div><span class="label">Pressure</span><span class="value">↑ ↔ ↓ 57%</span></div>
+                    <div><span class="label">Humidity</span><span class="value">57%</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-forecast">
+            <div class="_small card">
+                <h5>Monday</h5>
+                <div class="icon">
+                    <img src="img/icons/1.svg">
+                </div>
+                <div class="temperature">
+                    <h2>30-40&deg;C</h2>
+                </div>
+            </div>
+            <div class="_small card">
+                <h5>Monday</h5>
+                <div class="icon">
+                    <img src="img/icons/1.svg">
+                </div>
+                <div class="temperature">
+                    <h2>30-40&deg;C</h2>
+                </div>
+            </div>
+            <div class="_small card">
+                <h5>Monday</h5>
+                <div class="icon">
+                    <img src="img/icons/1.svg">
+                </div>
+                <div class="temperature">
+                    <h2>30-40&deg;C</h2>
+                </div>
+            </div>
+            <div class="_small card">
+                <h5>Monday</h5>
+                <div class="icon">
+                    <img src="img/icons/1.svg">
+                </div>
+                <div class="temperature">
+                    <h2>30-40&deg;C</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>Made with <span style="color: crimson;">❤</span> by <a href="https://instagram.com/babblebey" target="_blank">@babblebey</a></footer>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

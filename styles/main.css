@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    background-color: #eee;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+/* Hero */
+.hero {
+    background: green;
+    /* height: 100vh; */
+    height: 40vh;    
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding: 0 20px 20px 20px;
+}
+.hero > * {
+    flex-basis: 100%;
+}
+.hero .title {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-self: flex-start;
+    color: #fff;
+}
+.hero .search-wrapper {
+    /* display: flex; */
+    align-self: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero .search-wrapper form {
+    width: 100%;
+    text-align: center;
+}
+.hero .search-wrapper form input {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-family: 'Overpass', sans-serif;
+    box-shadow: 0 1em 1em rgba(0,0,0,.1);
+    position: relative;
+}
+.hero .location {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-self: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+}
+.hero .location .flag img {
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+}
+/* Result Section */
+.card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1em 1.5em rgba(0,0,0,.1);
+}
+
+/* Result Section - Current Condition */
+.current-weather {
+    max-width: 1200px;
+    margin: auto;
+    top: -50px;
+    position: relative;
+}
+._big.card {
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+._big.card .icon {
+    flex-basis: 20%;
+}
+._big.card .icon img {
+    width: 100%;
+}
+._big.card .temperature {
+    flex-basis: 25%;
+}
+._big.card .temperature h2 {
+    font-size: 5em;
+    line-height: 1;
+    margin: 5px 0;
+}
+._big.card .temperature span {
+    text-transform: uppercase;
+}
+._big.card .details {
+    flex-basis: 55%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+._big.card .details > * {
+    padding: 10px;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(209, 209, 209, 0.204);
+}
+._big.card .details > *:nth-child(5), ._big.card .details > *:nth-child(6) {
+    border: none;
+}
+._big.card .details .label {
+    font-size: .8em;
+}
+._big.card .details .value {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Result Section - Forecast */
+.weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+._small.card {
+    background: #fff;
+    padding: 1em;
+    flex-wrap: wrap;
+    flex-basis: 24%;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    padding: 2em 1em;    
+    box-sizing: border-box;
+}
+._small.card > * {
+    flex-basis: 100%;
+    text-align: center;
+}
+._small.card h5 {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+._small.card .icon img {
+    width: 70%;
+}
+._small.card .temperature h2 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+._small.card .temperature span {
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2em;
+}
