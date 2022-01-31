@@ -1,4 +1,4 @@
-const key = "ZG1CjIGNt7v1zEXP1cu2iryr8mCCI55h";
+const key = "GixohYPeyd1fkb99qb4yYjrUoHqh3oi4";
 
 // Get the City Information
 const getCity = async (city) => {
@@ -10,9 +10,9 @@ const getCity = async (city) => {
 }
 
 // Get the City's Current Weather Condition
-const getCurrentCondition = async (cityID) => {
+const getCurrentWeather = async (cityID) => {
     const baseURI = 'http://dataservice.accuweather.com/currentconditions/v1/';
-    const query = `${cityID}?apikey=${key}`;
+    const query = `${cityID}?apikey=${key}&details=true`;
     const response = await fetch(baseURI + query);
     const data = await response.json();
     return data[0];

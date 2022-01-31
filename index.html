@@ -26,81 +26,24 @@
             </div>
         </div>
         
-        <div class="current-search">
-            <div class="location">
-                <span class="city">Lagos</span>, <span class="country">Nigeria</span>
-                <span class="flag"><img src="https://flagpedia.net/data/flags/h80/ng.png"></span>
-            </div>
-            <div class="time">
-                <span>Wednesday 25th July • 5:45 AM</span>
-            </div>
-        </div>
+        <div class="current-search"></div>
     </div>
 
-    <main class="container result-section hide">
+    <main class="container weather-result hide">
 
-        <div class="current-weather">
+        <div class="current-condition">
             <div class="_big card">
-                <div class="icon">
-                    <img src="img/icons/1.svg">
-                </div>
-                <div class="temperature">
-                    <h2>40<span>&deg;C</span></h2>
-                    <span>Hazy Cloud</span>
-                </div>
-                <div class="details">
-                    <div><span class="label">Wind</span><span class="value">0 km/h</span></div>
-                    <div><span class="label">Pressure</span><span class="value">↑ ↔ ↓ 57%</span></div>
-                    <div><span class="label">Humidity</span><span class="value">57%</span></div>
-                    <div><span class="label">Wind</span><span class="value">0 km/h</span></div>
-                    <div><span class="label">Pressure</span><span class="value">↑ ↔ ↓ 57%</span></div>
-                    <div><span class="label">Humidity</span><span class="value">57%</span></div>
-                </div>
+                <div class="loading"></div>
             </div>
         </div>
 
-        <div class="weather-forecast">
-            <div class="_small card">
-                <h5>Monday</h5>
-                <div class="icon">
-                    <img src="img/icons/1.svg">
-                </div>
-                <div class="temperature">
-                    <h2>30-40&deg;C</h2>
-                </div>
-            </div>
-            <div class="_small card">
-                <h5>Monday</h5>
-                <div class="icon">
-                    <img src="img/icons/1.svg">
-                </div>
-                <div class="temperature">
-                    <h2>30-40&deg;C</h2>
-                </div>
-            </div>
-            <div class="_small card">
-                <h5>Monday</h5>
-                <div class="icon">
-                    <img src="img/icons/1.svg">
-                </div>
-                <div class="temperature">
-                    <h2>30-40&deg;C</h2>
-                </div>
-            </div>
-            <div class="_small card">
-                <h5>Monday</h5>
-                <div class="icon">
-                    <img src="img/icons/1.svg">
-                </div>
-                <div class="temperature">
-                    <h2>30-40&deg;C</h2>
-                </div>
-            </div>
-        </div>
+        <div class="forecast"></div>
+
     </main>
 
     <footer class="hide">Made with <span style="color: crimson;">❤</span> by <a href="https://instagram.com/babblebey" target="_blank">@babblebey</a></footer>
     
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/app.js"></script>
 </body>
