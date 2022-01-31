@@ -10,15 +10,51 @@ body {
     margin: auto;
     padding: 20px;
 }
+.hide {
+    /* display: none; */
+}
 /* Hero */
 .hero {
-    background: green;
-    height: 40vh;    
+    background-image: url(../img/3.jpg);
+    height: 50vh;    
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px 20px 20px;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+/* Start Style */
+.hero.start {
+    height: 100vh;
+}
+.hero.start .search-wrapper {
+    align-self: flex-start;
+}
+.hero.start .current-search {
+    display: none;
+}
+.hero.start ._sneak {
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+.hero.start ._sneak p {
+    font-size: 1.2em;
+}
+.hero ._sneak {
+    display: none;
+}
+/* -------------- */
 .hero > * {
     flex-basis: 100%;
 }
@@ -29,6 +65,7 @@ body {
     justify-content: space-between;
     align-self: flex-start;
     color: #fff;
+    position: relative;
 }
 .hero .title a {
     display: flex;
@@ -46,6 +83,7 @@ body {
     align-self: center;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 .hero .search-wrapper form {
     width: 100%;
@@ -61,15 +99,22 @@ body {
     box-shadow: 0 1em 1em rgba(0,0,0,.1);
     position: relative;
 }
-.hero .location {
+.hero .current-search {
     max-width: 1200px;
     margin: 0 auto;
     align-self: center;
     color: #fff;
+    position: relative;
+}
+.hero .current-search .location {
     font-weight: 700;
     font-size: 3em;
 }
-.hero .location .flag img {
+.hero .current-search .time {
+    margin-top: .5em;
+    font-size: 1.3em;
+}
+.hero .current-search .location .flag img {
     width: 40px;
     height: auto;
     border-radius: 5px;
@@ -180,6 +225,9 @@ footer {
     padding: 20px;
     margin-bottom: 2em;
 }
+footer a {
+    color: crimson;
+}
 
 /* Small Sized Laptop */
 @media (max-width: 884px) {
@@ -239,10 +287,10 @@ footer {
     .hero .title a span {
         display: none;
     }
-    .hero .location {
+    .hero .current-search .location {
         font-size: 2em;
     }
-    .hero .location .flag img {
+    .hero .current-search .location .flag img {
         width: 20px;
         border-radius: 2px;
     }
