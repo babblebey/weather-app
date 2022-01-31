@@ -65,7 +65,7 @@ const updateUI = data => {
     // --- Clear weather forecast InnerHTML for New Content to avoid Appending fo thesame search parameter
     weatherForecast.innerHTML = null; 
     // --- Creating a Small Card for each forecast array item
-    forecast.DailyForecasts.forEach(forecast => {
+    forecast.forEach(forecast => {
         weatherForecast.innerHTML += `
             <div class="_small card">
                 <h5>${moment(forecast.Date).format('dddd')}</h5>
@@ -94,6 +94,7 @@ searchForm.addEventListener('submit', e => {
             .catch(err => console.log(err));
     }
     searchForm.reset();
+    
     // UNHIDING WEATHER INFORMATION ELEMENTS
     if (hero.classList.contains('start')){
         hero.classList.remove('start');

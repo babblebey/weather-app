@@ -24,7 +24,7 @@ const getForecast = async (cityID) => {
     const query = `${cityID}?apikey=${key}&metric=true`;
     const response = await fetch(baseURI + query);
     const data = await response.json();
-    return data;
+    return data.DailyForecasts;
 }
 
 // getCity('lagos').then(data => console.log(data));
