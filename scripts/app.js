@@ -90,7 +90,7 @@ searchForm.addEventListener('submit', e => {
     // GET WEATHER INFORMATION, THEN UPDATE UI
     if (city.length) {
         getWeatherInfo(city)
-            .then(data => setTimeout(updateUI(data), 10))
+            .then(data => updateUI(data))
             .catch(err => console.log(err));
     }
     searchForm.reset();
